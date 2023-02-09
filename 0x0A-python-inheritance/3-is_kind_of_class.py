@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-is_kind_of_class = __import__('3-is_kind_of_class').is_kind_of_class
+"""
+Module: 3-is_kind_of_class
+Checks object against a class"""
 
-a = 1
-if is_kind_of_class(a, int):
-    print("{} comes from {}".format(a, int.__name__))
-if is_kind_of_class(a, float):
-    print("{} comes from {}".format(a, float.__name__))
-if is_kind_of_class(a, object):
-    print("{} comes from {}".format(a, object.__name__))
+
+def is_kind_of_class(obj, a_class):
+    """checks if object is a kind of a specified class """
+    return isinstance(obj, a_class)
